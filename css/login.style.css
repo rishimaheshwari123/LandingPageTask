@@ -1,0 +1,153 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000014;
+}
+
+.login-page {
+  background-color: #ffffff;
+  width: 450px;
+  height: 362px;
+  border: #f1f1f1 solid 2px;
+  display: flex;
+  justify-content: center;
+  padding:32px 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  padding: 0 16px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+}
+
+.container h3 {
+  color: #2D3142;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 700;
+}
+
+.container form input {
+  border: none;
+  border-bottom: 2px solid #00000014;
+  padding: 6px 2px;
+  outline: none;
+}
+
+/* ::placeholder {
+  opacity: 0.6;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+} */
+
+#first-name,
+#last-name,
+#work-email {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding:10px 4px;
+  
+}
+
+
+#first-name,
+#last-name {
+  display: inline-flex;
+  width: 178px;
+}
+
+.first-last {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-us {
+  background-color: #ff3366;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 15px 0;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkbox-term-condition {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-term-condition label{
+  width: 357px;
+}
+
+.term-condition-checkbox{
+ align-self: flex-start;
+ width: 14px; 
+ height: 14px;
+ background-color: none; 
+}
+
+.term-condition-checkbox:checked {
+  border: #ff3366 2px solid;
+  accent-color: #ff3366;
+}
+
+.term-condition {
+  color: #616678;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-left:10px;
+}
+
+
+.custom-checkbox input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.form-control{
+  position:relative;
+}
+
+.form-control label{
+  position:absolute;
+  top:15px;
+  left:0;
+  display: hidden;
+}
+
+.form-control label span{
+  display: inline-block;
+  font-size:14px;
+  min-width:5px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color:#6F718F99;
+}
+
+.form-control input:focus + label span, 
+.form-control input:valid + label span{
+  color:#6F718F99;
+  transform: translateY(-30px);
+}
+
+.work-email input{
+  width: 386px;
+}
